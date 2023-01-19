@@ -25,7 +25,7 @@ $adres = 'https://www.usom.gov.tr/adres/'.$id;
 
 try{//hata varmı diye kontrol mekanizması.
 
-        $baglanti=new PDO("mysql:host=localhost;dbname=godyqrth_guv","godyqrth_guv","wqnz@kduWo@e");//bağlantı yaptık
+        $baglanti=new PDO("mysql:host=localhost;dbname=dbadi","dbkadi","dbsifre");//bağlantı yaptık
         $ara=$baglanti->query("select * from liste where link like '$urlz' ");// Sayfa yenilendiğinde gelen bağlantı db'de var mı sorgusu yaptık
         $miktar=$ara->rowCount();//verilerin hepsini saydırdık.
         if($ara){//eğer veri çekildiyse
